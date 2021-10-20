@@ -1,0 +1,134 @@
+body{
+    background-color: #edeef0;
+    margin: 0;
+    font-family: Arial;
+}
+header{
+    background-color: #507299;
+    height: 50px;
+    padding-left: 15%;
+    font-size: 125%;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+footer{
+    color: #d0d0d0;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    font-size: 125%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+header img{
+    height: 35px;
+    margin-top: 8px;
+}
+.generalBlock{
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    padding-top: 65px;
+}
+.listBlock{
+    width: 200px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding-top: 65px;
+    margin-left: 30px;
+}
+.postLine{
+    margin-left: 250px;
+    display: inline-block;
+}
+.postBlock{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 450px;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 100%;
+    position:relative;
+}
+.postBlock::selection{
+    color:green;
+    background-color: #d0d0d0;
+}
+.postBlock img{
+    width: 100%;
+}
+.lineBlocka{
+    height: 3px;
+    background-color: #d0d0d0;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.lineBlockb{
+    height: 3px;
+    background-color: #d0d0d0;
+    width: calc(100% + 40px);
+    display: inline-block;
+    margin-bottom: 5px;
+    left: -20px;
+    position: relative;
+}
+.likeBlock{
+    display: flex;
+    justify-content: space-between;
+}
+a:hover{
+    background-color: #e1e5eb;
+}
+a{
+    color: #2e5473;
+    display: block;
+}
+.listBlock a{
+ 
+    padding: 10px;
+}
+h4{
+    margin: 0;
+}
+.impBlock{
+    position: fixed;
+    margin-left: calc(200px + 450px);
+    z-index: 3;
+    display: inline-block;
+}
+.impBlock .postBlock{
+    width: 150px;
+    text-align: left;
+}
+.postBlock p{
+    background-color: #e1e5eb;
+}
+@media(max-width: 1100px){
+    .impBlock{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    .listBlock{
+        position: static;
+        width: 400px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .postLine{
+        margin: 0 auto;
+        display: block;
+        
+    }
+    a{
+        display: inline-block;
+    }
+}
